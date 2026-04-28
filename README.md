@@ -39,13 +39,13 @@ The pipeline follows a **Medallion Architecture (Bronze → Silver → Gold)** t
 
 ## 🧹 Key Transformations
 - Standardized date formats  
-- Filled missing PropertyAddress values using ParcelID matching  
+- Filled missing PropertyAddress values
 - Split address fields into:
   - Street Address  
   - City  
   - State  
 - Standardized categorical values (Y/N → Yes/No)  
-- Removed duplicate records using window functions  
+- Removed duplicate records  
 
 ---
 
