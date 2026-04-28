@@ -15,3 +15,14 @@ The goal is to demonstrate data cleaning, transformation using SQL.
 - Structured schema for reporting
 - Fully cleaned and validated dataset
 - Ready for BI tools and dashboards
+## 🧹 Key Transformations
+- Standardized date formats
+- Filled missing property addresses using ParcelID
+- Split address fields into structured components
+- Normalized categorical values (Y/N → Yes/No)
+- Removed duplicates using ROW_NUMBER()
+## 📊 Final Output
+The Gold layer contains a clean, structured dataset ready for:
+- Reporting
+- BI dashboards (Power BI / Tableau)
+- Real estate analytics
