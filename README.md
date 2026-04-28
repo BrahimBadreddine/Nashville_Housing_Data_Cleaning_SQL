@@ -1,49 +1,65 @@
 # 🏠 Nashville Housing ETL Pipeline (SQL Server)
 
 ## 📌 Project Overview
-This project builds an end-to-end ETL pipeline for the Nashville Housing dataset using SQL Server.
-It follows a Medallion Architecture (Bronze → Silver → Gold) to clean, transform, and structure raw housing data for analytics and reporting.
-The goal is to demonstrate data cleaning, transformation using SQL.
+This project builds an end-to-end ETL pipeline using SQL Server to clean and transform the Nashville Housing dataset.
 
-**Description**: The dataset contains a list of houses that have been sold in Nashville between 2013 and 2019
+The dataset contains housing sales in Nashville from 2013 to 2019.
+
+The pipeline follows a **Medallion Architecture (Bronze → Silver → Gold)** to progressively clean, structure, and prepare data for analytics and reporting.
+
+---
 
 ## 🏗️ Data Architecture
 
 ### 🥉 Bronze Layer (Raw Data)
-
-- Direct ingestion from source dataset
-- No transformations applied
+- Direct ingestion from source dataset  
+- No transformations applied  
 
 ### 🥈 Silver Layer (Cleaned Data)
-
-- Data cleansing and standardization
-- Handling missing values and duplicates
-- Feature engineering and column splitting
+- Data cleaning and standardization  
+- Handling missing values  
+- Splitting and transforming fields  
+- Removing duplicate records  
 
 ### 🥇 Gold Layer (Analytics-Ready Data)
+- Final structured dataset  
+- Optimized for reporting and BI tools  
+- Ready for dashboards (Power BI / Tableau)  
 
-- Structured schema for reporting
-- Fully cleaned and validated dataset
-- Ready for BI tools and dashboards
+---
 
 ## 🛠️ Tech Stack
-- SQL Server
-- T-SQL
-- Data Cleaning
-- ETL Pipeline
-- Medallion Architecture
+- SQL Server  
+- T-SQL  
+- Data Cleaning  
+- ETL Pipeline  
+- Medallion Architecture  
+
+---
 
 ## 🧹 Key Transformations
+- Standardized date formats  
+- Filled missing PropertyAddress values using ParcelID matching  
+- Split address fields into:
+  - Street Address  
+  - City  
+  - State  
+- Standardized categorical values (Y/N → Yes/No)  
+- Removed duplicate records using window functions  
 
-- Standardized date formats
-- Filled missing property addresses
-- Split address fields into structured components
-- Normalized categorical values (Y/N → Yes/No)
-- Removed duplicates
+---
 
 ## 📊 Final Output
+The Gold layer provides a clean, structured dataset ready for:
+- Real estate analysis  
+- Business reporting  
+- BI dashboards (Power BI / Tableau)  
 
-The Gold layer contains a clean, structured dataset ready for:
-- Reporting
-- BI dashboards (Power BI / Tableau)
-- Real estate analytics
+---
+
+## 🚀 Outcome
+This project demonstrates practical SQL skills in:
+- Data cleaning and transformation  
+- ETL pipeline design  
+- Data modeling using layered architecture  
+- Handling real-world messy datasets  
