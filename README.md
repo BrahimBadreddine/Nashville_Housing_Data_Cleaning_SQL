@@ -66,4 +66,4 @@ This project demonstrates practical SQL skills in:
 ---
 
 ## 📌 Author
-Created by BRAHIM BADREDDINE
+**BRAHIM BADREDDINE**
