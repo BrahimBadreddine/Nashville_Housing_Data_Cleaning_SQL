@@ -6,8 +6,8 @@ and finally loads a clean dataset into the Gold layer for analytical reporting.
 */
 
 -- Move raw data from Bronze layer to Silver layer (staging for transformation)
-INSERT INTO silver.NashvilleHousing
 SELECT *
+INTO silver.NashvilleHousing
 FROM bronze.NashvilleHousing;
 
 -- Quick validation of Silver layer load
